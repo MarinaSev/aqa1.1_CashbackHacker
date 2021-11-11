@@ -1,9 +1,8 @@
 package ru.netology.servise;
 
-
 import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
+
 
 public class CashbackHackServiceTest {
 
@@ -14,7 +13,7 @@ public class CashbackHackServiceTest {
         int actual = service.remain(900);
         int expected = 100;
 
-        assertEquals(expected, actual);
+        assertEquals("JUnit4", expected, actual);
     }
 
     @Test
@@ -22,9 +21,9 @@ public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
 
         int actual = service.remain(1000);
-        int expected = 0;
+        int expected = 1000;
 
-        assertEquals(expected, actual);
+        assertEquals("JUnit4", expected, actual);
     }
 
     @Test
@@ -34,7 +33,7 @@ public class CashbackHackServiceTest {
         int actual = service.remain(999);
         int expected = 1;
 
-        assertEquals(expected, actual);
+        assertEquals("JUnit4", expected, actual);
     }
 
     @Test
@@ -44,7 +43,7 @@ public class CashbackHackServiceTest {
         int actual = service.remain(1001);
         int expected = 999;
 
-        assertEquals(expected, actual);
+        assertEquals("JUnit4", expected, actual);
     }
 
     @Test
@@ -54,6 +53,9 @@ public class CashbackHackServiceTest {
         int actual = service.remain(10500);
         int expected = 500;
 
-        assertEquals(expected, actual);
+        assertEquals("JUnit4", expected, actual);
     }
 }
+
+
+
